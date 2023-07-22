@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="./images/icons8-bookmark-64.png" type="image/x-icon">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <main class="main min-vh-100 w-100 d-flex justify-content-center align-items-center">
+        <section class="home home-bg px-4 py-5 rounded-5 w-75">
+            <div class="container ">
+                <div class="title text-center d-flex justify-content-center align-items-center">
+                    <img src="./images/icons8-bookmark-64.png" alt="icon" class="align-center">
+                    <h1 class="fw-bold display-3">Bookmarker</h1>
+                    <img src="./images/icons8-bookmark-64.png" alt="icon" class="align-center">
+                </div>
+                <div class="sub-title text-center">
+                    <h4>Bookmark your favorite sites </h4>
+                </div>
+                <div class="form w-75 mx-auto my-5">
+                    <div class="row text-black fs-4 fw-medium">
+                        <div class="col-12 mb-3">
+                            <label for="websiteName" class="form-label mb-0">Site Name</label>
+                            <input type="text" class="form-control" id="websiteName">
+                        </div>
+                        <div class="col-12">
+                            <label for="websiteUrl" class="form-label mb-0">Site URL</label>
+                            <input type="url" class="form-control" id="websiteUrl">
+                        </div>
+                        <div class="col text-center">
+                            <button type="submit" id="addBtn" class="btn btn-lg bg-color-gradient mx-auto mt-4 d-block w-25 rounded-pill text-white" onclick="addWebsite()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <table class="table caption-top text-center my-5 fs-5">
+                    <thead class="bg-light">
+                        <tr>
+                            <th scope="col">Index</th>
+                            <th scope="col">Website Name</th>
+                            <th scope="col">Visit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <!-- js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
